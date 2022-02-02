@@ -16,6 +16,11 @@
 		5BF11EB727AAAA8E0052019C /* BuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11EB627AAAA8E0052019C /* BuilderTests.swift */; };
 		5BF11EC127AAAA8E0052019C /* BuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11EC027AAAA8E0052019C /* BuilderUITests.swift */; };
 		5BF11EC327AAAA8E0052019C /* BuilderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11EC227AAAA8E0052019C /* BuilderUITestsLaunchTests.swift */; };
+		5BF11ED127AAABDE0052019C /* CatalogPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11ED027AAABDE0052019C /* CatalogPresenter.swift */; };
+		5BF11ED327AAAC550052019C /* CatalogInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11ED227AAAC550052019C /* CatalogInteractor.swift */; };
+		5BF11ED727AAAD8E0052019C /* CatalogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11ED627AAAD8E0052019C /* CatalogViewController.swift */; };
+		5BF11ED927AAAE570052019C /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11ED827AAAE570052019C /* ModuleBuilder.swift */; };
+		5BF11EDB27AAAE840052019C /* CatalogBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11EDA27AAAE840052019C /* CatalogBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		5BF11EBC27AAAA8E0052019C /* BuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuilderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF11EC027AAAA8E0052019C /* BuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderUITests.swift; sourceTree = "<group>"; };
 		5BF11EC227AAAA8E0052019C /* BuilderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5BF11ED027AAABDE0052019C /* CatalogPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogPresenter.swift; sourceTree = "<group>"; };
+		5BF11ED227AAAC550052019C /* CatalogInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogInteractor.swift; sourceTree = "<group>"; };
+		5BF11ED627AAAD8E0052019C /* CatalogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewController.swift; sourceTree = "<group>"; };
+		5BF11ED827AAAE570052019C /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
+		5BF11EDA27AAAE840052019C /* CatalogBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +109,9 @@
 		5BF11E9E27AAAA8D0052019C /* Builder */ = {
 			isa = PBXGroup;
 			children = (
-				5BF11E9F27AAAA8D0052019C /* AppDelegate.swift */,
+				5BF11ECF27AAABC00052019C /* Catalog */,
+				5BF11EDC27AAB01C0052019C /* Sources */,
 				5BF11EA127AAAA8D0052019C /* SceneDelegate.swift */,
-				5BF11EA327AAAA8D0052019C /* ViewController.swift */,
 				5BF11EA527AAAA8D0052019C /* Main.storyboard */,
 				5BF11EA827AAAA8E0052019C /* Assets.xcassets */,
 				5BF11EAA27AAAA8E0052019C /* LaunchScreen.storyboard */,
@@ -125,6 +135,27 @@
 				5BF11EC227AAAA8E0052019C /* BuilderUITestsLaunchTests.swift */,
 			);
 			path = BuilderUITests;
+			sourceTree = "<group>";
+		};
+		5BF11ECF27AAABC00052019C /* Catalog */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11ED027AAABDE0052019C /* CatalogPresenter.swift */,
+				5BF11ED227AAAC550052019C /* CatalogInteractor.swift */,
+				5BF11ED627AAAD8E0052019C /* CatalogViewController.swift */,
+				5BF11EDA27AAAE840052019C /* CatalogBuilder.swift */,
+			);
+			path = Catalog;
+			sourceTree = "<group>";
+		};
+		5BF11EDC27AAB01C0052019C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11E9F27AAAA8D0052019C /* AppDelegate.swift */,
+				5BF11EA327AAAA8D0052019C /* ViewController.swift */,
+				5BF11ED827AAAE570052019C /* ModuleBuilder.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +289,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BF11ED727AAAD8E0052019C /* CatalogViewController.swift in Sources */,
+				5BF11EDB27AAAE840052019C /* CatalogBuilder.swift in Sources */,
+				5BF11ED127AAABDE0052019C /* CatalogPresenter.swift in Sources */,
 				5BF11EA427AAAA8D0052019C /* ViewController.swift in Sources */,
 				5BF11EA027AAAA8D0052019C /* AppDelegate.swift in Sources */,
+				5BF11ED927AAAE570052019C /* ModuleBuilder.swift in Sources */,
 				5BF11EA227AAAA8D0052019C /* SceneDelegate.swift in Sources */,
+				5BF11ED327AAAC550052019C /* CatalogInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
